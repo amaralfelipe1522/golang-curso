@@ -11,6 +11,6 @@ func main() {
 	s[9] = 88
 	fmt.Println(s, len(s), cap(s)) //Exibe tamanho e capacidade do slice
 
-	s = append(s, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-	fmt.Println(s, len(s), cap(s))
+	s = append(s, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+	fmt.Println(s, len(s), cap(s)) //atualizou automaticamente a capacidade do array interno para 40
 }
