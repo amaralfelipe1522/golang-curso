@@ -27,13 +27,13 @@ func main() {
 	// 	return
 	// }
 
-	fmt.Println(dtMap)
+	//fmt.Println(dtMap)//convertido para bytes
 
 	jsonToString := string(dtMap)
 	fmt.Println("Convertido em JSON:", jsonToString)
 
 	map2 := make(map[string]interface{})
-
+	//converte bytes para JSON
 	json.Unmarshal([]byte(jsonToString), &map2) //tb pode dar erro, mas eu não tratei
 	fmt.Println("Novo map:", map2)
 }
