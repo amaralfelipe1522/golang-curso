@@ -19,6 +19,9 @@ func main() {
 		},
 	}
 
+	map3 := map1
+	fmt.Println(map3)
+
 	fmt.Println("Map original:", map1)
 
 	dtMap, _ := json.Marshal(map1) //omitindo o erro, se houver
@@ -36,4 +39,6 @@ func main() {
 	//converte bytes para JSON
 	json.Unmarshal([]byte(jsonToString), &map2) //tb pode dar erro, mas eu não tratei
 	fmt.Println("Novo map:", map2)
+
+	fmt.Println(map3)
 }
