@@ -1,5 +1,6 @@
 package main
 
+//função respeita a origem
 import "fmt"
 
 func closureEx() func() {
