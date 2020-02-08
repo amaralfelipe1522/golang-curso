@@ -7,7 +7,7 @@ func increment1(n int) {
 	fmt.Println(n)
 }
 
-func increment2(n *int) {
+func increment2(n *int) { //deixa de ser uma função pura
 	*n++
 	fmt.Println(*n)
 }
