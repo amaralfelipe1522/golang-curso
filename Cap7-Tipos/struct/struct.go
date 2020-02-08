@@ -21,4 +21,8 @@ func main() {
 	}
 	fmt.Println(produto1)
 	fmt.Println("Com desconto:", produto1.produto())
+
+	produto2 := structProduto{"Caderno", 20.00, 0.15}
+	fmt.Println(produto2)
+	fmt.Println("Com desconto:", produto2.produto())
 }
