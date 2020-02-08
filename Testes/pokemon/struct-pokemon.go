@@ -1,5 +1,6 @@
 package main
 
+//Pokemon : Estrutura base de um Pokémon
 type Pokemon struct {
 	name    string
 	level   int
