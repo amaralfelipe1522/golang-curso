@@ -17,12 +17,13 @@ func (f *ferrari) ligarTurbo() {
 }
 
 func main() {
+	//manipulando a nível do Tipo
 	enzo := ferrari{"Ferrari Enzo", false, 0}
 	fmt.Println(enzo)
 	enzo.ligarTurbo()
 	fmt.Println(enzo)
 
-	//ou
+	//ou manipulando a nível de interface
 	var maranello esportivo = &ferrari{"Ferrari Maranello", false, 0}
 	fmt.Println(maranello)
 	maranello.ligarTurbo()
