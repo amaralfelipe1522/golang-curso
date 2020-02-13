@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/amaralfelipe1522/area"
+	"github.com/amaralfelipe1522/golang-area"
 	/*
 		package area
 
