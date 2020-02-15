@@ -18,7 +18,7 @@ func main() {
 	// fale("João2", "HEHEHE", 4)
 
 	//Criando uma Go Routine
-	go fale("João", "Ô diabo", 4)
-	go fale("João2", "HEHEHE", 4)
+	go fale("João", "Ô diabo", 5)
+	go fale("João2", "HEHEHE", 5)
 	time.Sleep(time.Second * 3) //Go Routine terá 3 segundos para executar antes da função Main ser encerrada
 }
