@@ -15,4 +15,5 @@ func encodeMd5(text string) []byte{
 func main() {
 	toEncode := "Felipe"
 	fmt.Printf("%x",encodeMd5(toEncode))
+	//TO DO: Ver uma forma de converter o retorno em []byte para base16, assim como o %x faz no Printf
 }
