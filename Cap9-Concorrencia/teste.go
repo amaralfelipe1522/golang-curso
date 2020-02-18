@@ -22,4 +22,3 @@ func main() {
 
 	fmt.Println(x, y, x+y)
 }
-	
