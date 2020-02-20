@@ -3,14 +3,8 @@ package main
 import "fmt"
 
 func buffando(ch chan int, valor int) {
-	for i:=1; i<=valor; i++ {
-		ch <- i
-	}
-}
-
-func printandp(valor int) {
 	for i:=0; i<valor; i++ {
-		fmt.Println("Printando")
+		ch <- i+1
 	}
 }
 
@@ -18,7 +12,7 @@ func main() {
 	valor := 5
 	ch := make(chan int, valor)
 
-	buffando(ch,valor)
+	go buffando(ch,valor)
 
 	fmt.Println(<-ch)
 	fmt.Println(<-ch)
