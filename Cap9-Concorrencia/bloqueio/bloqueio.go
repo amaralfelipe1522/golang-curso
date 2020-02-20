@@ -12,7 +12,7 @@ func rotina(ch chan int) {
 }
 
 func main() {
-	ch := make(chan int)
+	ch := make(chan int,10)
 	go rotina(ch)
 	fmt.Println("Vai ler")
 	//fmt.Println(<-ch)
