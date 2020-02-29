@@ -1,5 +1,6 @@
 package main
 
+//Multiplexar é unificar 2 ou mais channels
 import (
 	"fmt"
 	"io/ioutil"
