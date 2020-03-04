@@ -23,7 +23,7 @@ func titulo(urls ...string) <-chan string {
 	return c
 }
 
-//Select é uma estrutura de controle (assim como Switch e For) específica para trabalhar com concorrencia
+//Select é uma estrutura de controle (assim como Switch) específica para trabalhar com concorrencia
 func oMaisRapido(url1, url2, url3 string) string {
 	c1 := titulo(url1)
 	c2 := titulo(url2)
