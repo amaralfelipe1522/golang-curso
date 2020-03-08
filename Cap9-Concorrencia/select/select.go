@@ -17,7 +17,8 @@ func titulo(urls ...string) <-chan string {
 			html, _ := ioutil.ReadAll(resp.Body)
 
 			r, _ := regexp.Compile("<title>(.*?)<\\/title>") // cria a regra de regex
-			c <- r.FindStringSubmatch(string(html))[1]       // converte o conteúdo html para string e aplica o regex
+
+			c <- r.FindStringSubmatch(string(html))[1] // converte o conteúdo html para string e aplica o regex
 		}(url) // dispara a execução da função anonima passando url como parametro
 	}
 	return c
