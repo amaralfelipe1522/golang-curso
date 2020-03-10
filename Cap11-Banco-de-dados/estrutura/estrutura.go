@@ -11,7 +11,7 @@ import (
 	_ "github.com/go-sql-driver/mysql" //implicitamente necessário, porém não será acessado diretamente
 )
 
-func exec(db *sql.DB, sql string) sql.Result {
+func exec(db *sql.DB, sql string) sql.Result { //Necessário para comandos DDL
 	result, err := db.Exec(sql)
 	if err != nil {
 		panic(err)
