@@ -1,6 +1,6 @@
 package matematica
 
-// No terminal é possível executar o teste com o comando: go test
+// No terminal é possível executar o teste com o comando: go test -v
 // Ou em um diretório pai: go test ./...
 import (
 	"fmt"
