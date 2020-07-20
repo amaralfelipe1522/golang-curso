@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 )
-//xablau
+
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json") // define o tipo de conteúdo a ser enviado ao cliente
 	switch r.Method {
